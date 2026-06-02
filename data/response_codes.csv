@@ -1,0 +1,83 @@
+qnum,option_code,option_label,direction_tag,score_value,dimension_contribution,dimension_direction,routing_rule,derived_metric_use
+Q11,opt1,Shared values,,,,,not_in_h1_metric,
+Q11,opt2,Shared sense of humour,,,,,not_in_h1_metric,
+Q11,opt3,Shared interests or passions,,,,,not_in_h1_metric,
+Q11,opt4,Shared cultural references,cultural,,,,counts_in_h1_attribution,cultural_attribution_share
+Q11,opt5,Similar way of seeing the world,cultural,,,,counts_in_h1_attribution,cultural_attribution_share
+Q11,opt6,Chemistry or energy,,,,,not_in_h1_metric,
+Q11,opt7,Similar life situation or stage,,,,,not_in_h1_metric,
+Q12,opt1,"Yes, and it was significant - real sense of being understood",strong_yes,4,,,counts_in_any_yes_and_strong_yes,any_yes_share + strong_yes_share
+Q12,opt2,"Yes, but more a pleasant detail",soft_yes,3,,,counts_in_any_yes_only,any_yes_share
+Q12,opt3,"Sometimes, not sure how much it matters",uncertain,2,,,not_in_validation_metric,
+Q12,opt4,Rarely or never,no,1,,,counts_in_refutation,rarely_never_share
+Q13,opt1,Similar cultural tastes,taste,,,,counts_in_signal_d_taste,taste_leaning_share
+Q13,opt2,Engage with culture in a similar way,depth,,,,counts_in_signal_d_depth,depth_leaning_share
+Q13,opt3,Very different cultural tastes (broaden perspective),broaden,,,,not_in_h2_verdict,broaden_share (separate finding)
+Q13,opt4,None of these appeal,none,,,,not_in_h2_verdict,
+Q14,opt1,Welcome it,open_unconditional,,,,counts_in_total_open_and_unconditional,total_open_share + unconditional_share
+Q14,opt2,Open if credible,open_conditional,,,,counts_in_total_open_and_conditional,total_open_share + conditional_share
+Q14,opt3,Sceptical,not_open,,,,counts_in_sceptical,sceptical_share
+Q14,opt4,Prefer organic only,not_open,,,,counts_in_sceptical,sceptical_share
+Q15,opt1,"Yes, absolutely",appetite,,,,counts_in_online_to_offline,online_to_offline_share
+Q15,opt2,"Yes, after online first",appetite,,,,counts_in_online_to_offline,online_to_offline_share
+Q15,opt3,Maybe depends,,,,,not_counted,
+Q15,opt4,No prefer separate,,,,,not_counted,
+Q21,opt1,Disengage - prefer accessible,,1,ACO,positive,,low_ACO contribution
+Q21,opt2,Give it more time but only so far,,2,ACO,positive,,mid_low_ACO contribution
+Q21,opt3,Persist - challenge is part of the appeal,,4,ACO,positive,,high_ACO contribution
+Q21,opt4,Depends on mood and domain,,2.5,ACO,positive,,mid_ACO contribution
+Q22,opt1,Get completely absorbed,,1,EEM,positive,,low_analytical (absorptive)
+Q22,opt2,Stay aware and analytical,,3,EEM,positive,,high_analytical
+Q22,opt3,Absorbed first reflective afterwards,,2,EEM,positive,,mid_EEM
+Q24,opt1,"Yes, describes me (dwelling)",dwelling,1,CREP,negative,reverse_code_to_3,low_exploration (reverse-codes to high anti-exploration score)
+Q24,opt2,Somewhat,partial,2,CREP,negative,reverse_code_to_2,mid_exploration
+Q24,opt3,"No, not really (exploring)",exploring,3,CREP,negative,reverse_code_to_1,high_exploration (reverse-codes to low anti-exploration score)
+Q25,opt1,Talk straightaway,social_active,,SCCE,positive,,high_SCCE + EEM_supp
+Q25,opt2,Quiet first then discuss,social_reflective,,SCCE,positive,,mid_high_SCCE
+Q25,opt3,Rather not dissect,solitary,,SCCE,negative,,low_SCCE
+Q25,opt4,Depends on how I felt,variable,,SCCE,neutral,,neutral_SCCE
+Q26,opt1,Emotional release or catharsis,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt2,Intellectual stimulation or new ideas,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt3,Transcendence or spiritual,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt4,Something to share or discuss,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt5,Entertainment and enjoyment,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt6,Political or ethical engagement,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q26,opt7,Beauty for its own sake,,,CREP,positive,,Per H5 mapping - see flagged concern
+Q27,opt1,Not at all,,1,CBTP,positive,,low_CBTP
+Q27,opt2,Slightly,,2,CBTP,positive,,mid_low_CBTP
+Q27,opt3,Quite a lot,,3,CBTP,positive,,mid_high_CBTP
+Q27,opt4,Very much - research before engaging,,4,CBTP,positive,,high_CBTP
+Q28,opt1,Tastes have stayed consistent,stable,1,AEC,positive,,low_AEC (stable)
+Q28,opt2,Tastes evolved gradually no turning points,gradual,2,AEC,positive,,mid_low_AEC
+Q28,opt3,Specific turning points shifted my engagement,transformative,3,AEC,positive,,high_AEC (transformative)
+Q28,opt4,Still forming - in discovery/transition,forming,4,AEC,positive,,high_AEC (active formation)
+Q29,opt1,Different depth of engagement,depth_valuer,,CMS,positive,,CMS_primary + ACO_supp + H2 depth_valuers_share
+Q29,opt2,Different ethical standards,ethics_valuer,,CMS,positive,,CMS_primary
+Q29,opt3,Different emotional way,emotion_valuer,,CMS,positive,,CMS_primary
+Q29,opt4,Different curiosity / openness,curiosity_valuer,,CMS,positive,,CMS_primary
+Q29,opt5,Different religion / spirituality,religion_valuer,,CMS,positive,,CMS_primary
+Q29,opt6,None would be especially difficult,none,,CMS,neutral,,CMS_primary (low salience)
+Q31,opt1,That we like the same things,taste,,,,counts_in_h2_signal_a_taste,H2: taste_share
+Q31,opt2,That we engage with culture in a similar way,depth,,,,counts_in_h2_signal_a_depth,H2: depth_share
+Q31,opt3,Both - shared taste and shared approach,hybrid,,,,counts_in_h2_signal_a_hybrid,H2: hybrid_share
+Q31,opt4,Neither - cultural affinity not reliable,neither,,,,not_in_h2_verdict_h1_tension_flag,H1: neither_share (tension flag)
+Q32,opt1,Same specific works,taste,,,,counts_in_appetite_and_h2_b_taste,H4a: appetite_share + H2_B: taste_share (numerator of verdict_denominator)
+Q32,opt2,Same engagement way,depth,,,,counts_in_appetite_and_h2_b_depth,H4a: appetite_share + H2_B: depth_share
+Q32,opt3,Combines both,hybrid,,,,counts_in_appetite_and_h2_b_hybrid,H4a: appetite_share + H2_B: hybrid_share
+Q32,opt4,Deliberately different profiles,broaden,,,,counts_in_appetite_only,H4a: appetite_share + broaden_me_share (separate)
+Q32,opt5,Any of these if credible,conditional_appetite,,,,counts_in_appetite_only,H4a: appetite_share (conditional)
+Q32,opt6,Not interested in any of these,refusal,,,,not_in_appetite_not_in_h2_verdict,(refusal - excluded from both)
+Q33,opt1,Very comfortable,comfort_unconditional,,,,counts_in_total_comfort_and_unconditional,total_comfort_share + unconditional_comfort
+Q33,opt2,Comfortable with control,comfort_conditional,,,,counts_in_total_comfort_and_conditional,total_comfort_share + conditional_comfort
+Q33,opt3,Neutral,neutral,,,,reported_separately,neutral_share
+Q33,opt4,Slightly uncomfortable,discomfort,,,,counts_in_discomfort,discomfort_share
+Q33,opt5,Very uncomfortable,discomfort,,,,counts_in_discomfort,discomfort_share
+Q34,opt1,Finding new friends,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt2,Dating and romantic connection,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt3,Cultural discussion circle,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt4,Creative or artistic project community,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt5,Learning group,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt6,Social project collective,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt7,Scientific research team,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt8,Professional / business team,use_case,,,,counts_in_use_case,use_case_share
+Q34,opt9,Feature within existing platform,use_case,,,,counts_in_use_case,use_case_share
