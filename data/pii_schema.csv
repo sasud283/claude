@@ -1,0 +1,10 @@
+field_name,field_label,field_type,required,source,pii_category,retention_policy,raw_column_name
+respondent_uuid,Respondent UUID,uuid,Y,system_generated,join_key,retain_until_research_ends,
+captured_at,Timestamp of contact capture,iso_timestamp,Y,system_generated,audit,retain_until_research_ends,
+name,Name (preferred form of address),open_text,N,end_of_survey,identity,delete_on_request,
+email,Email address,email,N,end_of_survey,contact,delete_on_request,
+whatsapp_sms,WhatsApp / SMS number,phone,N,end_of_survey,contact,delete_on_request,
+consent_followup_interview,Open to a 30-45 min follow-up interview,boolean,Y,end_of_survey,consent_flag,retain_until_research_ends,
+consent_share_cultural_data,Willing to share cultural platform data (read-access to public ratings),boolean,Y,end_of_survey,consent_flag,retain_until_research_ends,
+consent_model_creation,Willing to participate in model creation activities,boolean,Y,end_of_survey,consent_flag,retain_until_research_ends,
+contact_method_preference,Preferred contact method,single_choice,N,end_of_survey,contact_metadata,delete_on_request,

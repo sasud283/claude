@@ -1,4 +1,6 @@
 qnum,variable_name,question_summary,response_type,response_count,scale,survey_section,hypothesis_primary,hypothesis_supplementary,role,required,pii_flag,sd_bias_flag,engine_feature,recoding_notes,derived_metrics,raw_column_name
+SYS_UUID,respondent_uuid,System-generated respondent identifier (UUID v4),system,,uuid,SYS_META,system,,join_key,Y,N,N,N,Auto-generated at survey ingestion if survey tool does not provide a stable ID; identical value stored in pii_contacts.csv to enable controlled join with PII data,Pseudonymous join key between research data and PII contact store,
+SYS_TIMESTAMP,submitted_at,System-generated submission timestamp,system,,iso_timestamp,SYS_META,system,,metadata,Y,N,N,N,Captured from survey tool export,Audit trail; recency segmentation if needed,
 Q1,age_group,Age group,single_choice,7,nominal,S1,demographics,,segmentation,Y,N,N,N,,Subgroup splits across all hypotheses,
 Q2,gender_identity,Gender identity,single_choice,5,nominal,S1,demographics,,segmentation,Y,N,N,N,,Subgroup splits,
 Q3,life_situation,Life situation,single_choice,6,nominal,S1,demographics,,segmentation,Y,N,N,N,,Subgroup splits,
